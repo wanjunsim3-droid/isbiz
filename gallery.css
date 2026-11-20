@@ -1,6 +1,6 @@
-.art-one{background:url('assets/07/1783402492_3.0한강조망.webp') center/cover}
-.art-two{background:url('assets/07/1783403972_1.커뮤니티.webp') center/cover}
-.art-three{background:url('assets/07/1783404672_1.교통인프라.webp') center/cover}
+.art-one{background:url('1783402492_3.0한강조망.webp') center/cover}
+.art-two{background:url('1783403972_1.커뮤니티.webp') center/cover}
+.art-three{background:url('1783404672_1.교통인프라.webp') center/cover}
 .gallery{display:grid;grid-template-columns:.6fr 1.4fr;gap:5vw;background:#fff}
 .gallery-title{position:sticky;top:110px;align-self:start}
 .gallery-title>p:last-child{color:#6b737a}

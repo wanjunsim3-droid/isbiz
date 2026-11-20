@@ -1,0 +1,23 @@
+.art-one{background:url('assets/07/1783402492_3.0한강조망.webp') center/cover}
+.art-two{background:url('assets/07/1783403972_1.커뮤니티.webp') center/cover}
+.art-three{background:url('assets/07/1783404672_1.교통인프라.webp') center/cover}
+.gallery{display:grid;grid-template-columns:.6fr 1.4fr;gap:5vw;background:#fff}
+.gallery-title{position:sticky;top:110px;align-self:start}
+.gallery-title>p:last-child{color:#6b737a}
+.gallery-track{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.gallery-track figure{margin:0;background:var(--paper);overflow:hidden}
+.gallery-track figure:first-child{grid-column:1/-1}
+.gallery-track img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .6s ease}
+.gallery-track figure:first-child img{aspect-ratio:16/9}
+.gallery-track figure:hover img{transform:scale(1.025)}
+.gallery-track figcaption{padding:.8rem 1rem;font:italic .8rem Georgia,serif;color:var(--blue)}
+@media(max-width:820px){.gallery{grid-template-columns:1fr}.gallery-title{position:static}.gallery-track{grid-template-columns:1fr}.gallery-track figure:first-child{grid-column:auto}}
+.project-visual{position:relative;height:min(62vw,720px);min-height:420px;overflow:hidden;color:#fff}
+.project-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,18,35,.72),rgba(5,18,35,.08))}
+.project-visual>img{width:100%;height:100%;object-fit:cover}
+.project-visual>div{position:absolute;z-index:1;left:9vw;top:50%;transform:translateY(-50%)}
+.overview{display:grid;grid-template-columns:.55fr 1.45fr;gap:6vw;background:#e8edf0}
+.overview-copy{align-self:start;position:sticky;top:110px}.overview-copy>p:last-child{color:#66727c}
+.overview-images{display:grid;gap:1.2rem}.overview-images img{display:block;width:100%;height:auto;background:#fff}
+.location-photo{background:#102a49}.location-photo img{width:100%;height:100%;object-fit:cover}
+@media(max-width:820px){.project-visual{min-height:500px}.project-visual>img{object-position:64% center}.project-visual>div{left:6vw}.overview{grid-template-columns:1fr}.overview-copy{position:static}}

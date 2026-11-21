@@ -54,3 +54,13 @@ interestForm.addEventListener('submit', async event => {
     button.disabled = false;
   }
 });
+
+// 주소에 #contact 같은 위치가 있으면 이미지 로딩이 끝난 뒤 다시 정확히 맞춰 줍니다.
+if (location.hash.length > 1) {
+  const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if (target) {
+    const align = () => target.scrollIntoView({ behavior: 'auto', block: 'start' });
+    requestAnimationFrame(align);
+    addEventListener('load', align, { once: true });
+  }
+}

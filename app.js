@@ -41,6 +41,8 @@ interestForm.addEventListener('submit', async event => {
         _honey: interestForm.elements._honey ? interestForm.elements._honey.value : '',
         이름: name,
         연락처: phone,
+        '지식산업센터 상담': interestForm.elements.biz && interestForm.elements.biz.checked ? '희망' : '',
+        유입경로: new URLSearchParams(location.search).get('from') === 'isbiztower' ? '아이에스BIZ타워 사이트' : (new URLSearchParams(location.search).get('from') || ''),
         접수시각: new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' })
       })
     });
